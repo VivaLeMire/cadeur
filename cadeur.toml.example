@@ -1,0 +1,27 @@
+# CADEUR v1.1 example configuration
+profile = "normal"
+timeout_sec = 0.20
+workers = 600
+retry_timeouts = false  # use -rt to enable; --no-retry-timeouts always disables
+retry_count = 2
+retry_backoff_sec = 0.0
+checkpoint_every = 100
+
+[discovery]
+enabled = true
+single = false
+timeout_sec = 0.35
+workers = 128
+ports = [22, 80, 443, 445, 3389, 8080, 8000]
+
+[service]
+workers = 32
+timeout_sec = 0.6
+
+[target]
+max_targets = 256
+host_concurrency = 1
+
+[output]
+# json = "report.json"
+# html = "report.html"
