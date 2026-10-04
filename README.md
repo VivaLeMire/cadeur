@@ -1,6 +1,75 @@
 # CADEUR
 
-CADEUR is a modular adaptive TCP network scanner for authorized security testing and lab environments.
+<p align="center">
+  <strong>Adaptive Asynchronous Network Scanner</strong>
+</p>
+
+<p align="center">
+  A modular network reconnaissance tool for authorized security testing, lab environments, and network analysis.
+</p>
+
+<p align="center">
+  <a href="https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml">
+    <img src="https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml/badge.svg" alt="CI">
+  </a>
+  <a href="https://github.com/VivaLeMire/cadeur/releases">
+    <img src="https://img.shields.io/github/v/release/VivaLeMire/cadeur?display_name=tag&sort=semver" alt="Latest Release">
+  </a>
+  <a href="https://github.com/VivaLeMire/cadeur/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/VivaLeMire/cadeur" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.12%2B-blue" alt="Python">
+</p>
+
+---
+
+## What is CADEUR?
+
+CADEUR is an asynchronous network scanner designed to discover reachable hosts, identify open TCP services, analyze network behavior, and generate structured reports.
+
+The project focuses on modular architecture, adaptive scanning, observable results, and a clear separation between raw network observations and security assessments.
+
+```text
+Target
+  │
+  ▼
+Host Discovery
+  │
+  ▼
+Async TCP Scanner
+  │
+  ├── Adaptive Timeout
+  ├── Adaptive Concurrency
+  └── Optional Retry
+  │
+  ▼
+Open Ports
+  │
+  ▼
+Service Detection
+  │
+  ▼
+Behavioral Analysis
+  │
+  ▼
+JSON / HTML Reports
+```
+
+## Features
+
+* Async TCP scanning with bounded concurrency
+* Host discovery and CIDR support
+* Multiple targets
+* Adaptive timeout and concurrency
+* Explicit timeout retry mode
+* Checkpoint and resume support
+* Service detection with protocol-based evidence
+* Behavioral timeout analysis
+* JSON and HTML reporting
+* TOML configuration
+* Automated testing with GitHub Actions
+
+> CADEUR is intended for systems you own or are explicitly authorized to test.
 
 
 [![CADEUR CI](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml/badge.svg)](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml)
