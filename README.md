@@ -2,6 +2,9 @@
 
 CADEUR is a modular adaptive TCP network scanner for authorized security testing and lab environments.
 
+
+[![CADEUR CI](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml/badge.svg)](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml)
+
 ## v1.1.1
 
 v1.1 focuses on making the v1.0 engine reliable for longer scans and repeatable workflows.
