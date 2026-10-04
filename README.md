@@ -71,9 +71,6 @@ JSON / HTML Reports
 
 > CADEUR is intended for systems you own or are explicitly authorized to test.
 
-
-[![CADEUR CI](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml/badge.svg)](https://github.com/VivaLeMire/cadeur/actions/workflows/ci.yml)
-
 ## v1.1.1
 
 v1.1 focuses on making the v1.0 engine reliable for longer scans and repeatable workflows.
